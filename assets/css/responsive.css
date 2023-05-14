@@ -1,0 +1,107 @@
+
+/* hide scrollbar */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+main::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  
+  main {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  
+  #queue-2::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  
+  #queue-2 {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  
+  /* media query for extra small devices */
+  
+  @media (min-width: 365px) {
+    html {
+      font-size: 9px;
+    }
+  }
+  
+  /* media query for small devices */
+  
+  @media (min-width: 576px) {
+    html {
+      font-size: 11px;
+    }
+  }
+  
+  /* media query for medium devices */
+  
+  @media (min-width: 768px) {
+    html {
+      font-size: 13px;
+    }
+    .current-song-container {
+      flex-direction: row;
+    }
+    .current-song-container img {
+      width: 25%;
+      margin-right: 1rem;
+      max-height: none;
+    }
+    .current-song-button-container {
+      display: flex;
+      flex-direction: row;
+    }
+    .current-song-more-options-container {
+      flex-direction: row;
+    }
+    .responsive {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    main {
+      width: 60%;
+    }
+    #queue-1 {
+      display: none;
+    }
+    #queue-2 {
+      display: block;
+      width: 35%;
+      height: 80vh;
+      overflow-y: auto;
+      margin-bottom: 0;
+    }
+  }
+  
+  /* media query for large devices */
+  
+  @media (min-width: 992px) {
+    html {
+      font-size: 15px;
+    }
+  }
+  
+  /* media query for extra-large devices */
+  
+  @media (min-width: 1200px) {
+    html {
+      font-size: 17px;
+    }
+  }
+  
