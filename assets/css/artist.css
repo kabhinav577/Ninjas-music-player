@@ -641,7 +641,8 @@ footer {
 
 input[type="range"] {
     width: 80%;
-}
+    height: 5px;
+  }
 
 
 /*Player Extras*/
@@ -857,3 +858,20 @@ aside {
         font-size: 17px;
     }
 }
+
+@media (max-width: 576px) {
+    #footer-song-info div span i {
+      display: none;
+    }
+
+    input[type="range"] {
+        width: 80%;
+        height: 3px;
+    }
+
+    .player-extras div:nth-child(1),
+    .player-extras div:nth-child(2) {
+      display: none;
+    }
+    
+  }

@@ -56,6 +56,9 @@ main::-webkit-scrollbar {
     .current-song-container {
       flex-direction: row;
     }
+    /* .carousel {
+      flex-direction: column;
+    } */
     .current-song-container img {
       width: 25%;
       margin-right: 1rem;
@@ -103,5 +106,30 @@ main::-webkit-scrollbar {
     html {
       font-size: 17px;
     }
+  }
+
+  @media (max-width: 576px) {
+    .carousel {
+      flex-direction: column;
+    }
+    .carousel img {
+      width: 300px;
+      height: 300px;
+      margin: 1rem;
+    }
+    input[type="range"] {
+      width: 80%;
+      height: 3px;
+  }
+
+    #footer-song-info div span i {
+      display: none;
+    }
+
+    .player-extras div:nth-child(1),
+    .player-extras div:nth-child(2) {
+      display: none;
+    }
+    
   }
   
